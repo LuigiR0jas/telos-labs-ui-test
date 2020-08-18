@@ -1,0 +1,44 @@
+.navbar {
+	height: 72px;
+}
+
+	.navbar__container {
+		display: flex;
+		padding: 18px;
+		height: 100%;
+		align-items: center;
+	}
+
+	.navbar__container--vertical {
+		flex-direction: column;
+	}
+
+		.navbar__logo {
+			margin: 0;
+			margin-right: auto;
+			font-style: normal;
+			font-weight: 200;
+			font-size: 24px;
+			line-height: 150%;
+		}
+
+		.navbar__circle {
+			height: 24px;
+			width: 24px;
+			margin-left: auto;
+			border-radius: 100%;
+			background-color: var(--main-accent-color);
+		}
+
+		.navbar__circle--lg {
+			height: 48px;
+			width: 48px;
+		}
+
+.navbar--inverted {
+	background-color: #0f0f0f;
+}
+
+.navbar--inverted .navbar__circle {
+	background-color: white;
+}

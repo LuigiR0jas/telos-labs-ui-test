@@ -1,0 +1,29 @@
+/*
+*
+ General
+*
+*/
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Modules */
+@import url("./navbar.css");
+@import url("./hero.css");
+@import url("./section.css");
+@import url("./cta.css");
+
+:root {
+	--main-accent-color: #0b1113;
+	--secondary-accent-color: #24404f;
+	--cta-background-color: #495664;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
