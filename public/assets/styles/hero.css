@@ -5,122 +5,122 @@
 */
 
 .hero {
-	height: 513px;
-	background-color: var(--main-accent-color);
+  height: 513px;
+  background-color: var(--main-accent-color);
 }
 
-	.hero__container {
-		display: flex;
-		flex-direction: row;
-		height: 100%;
-		padding: 69px 64px 69px 64px;
-	}
+  .hero__container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 69px 64px 69px 64px;
+  }
 
-		.hero__text {
-			width: 615px;
-		}
-	
-			.hero__header {
-				margin: 0;
-				color: white;
-				font-weight: 900;
-				font-size: 68px;
-				line-height: 118%;
-			}
+    .hero__text {
+      width: 615px;
+    }
+  
+      .hero__header {
+        margin: 0;
+        color: white;
+        font-weight: 900;
+        font-size: 68px;
+        line-height: 118%;
+      }
 
-			.hero__p {
-				width: 599px;
-				margin-top: 48px;
-				margin-right: auto;
-				margin-bottom: 51px;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 24px;
-				line-height: 150%;
-				color: white;
-			}
+      .hero__p {
+        width: 599px;
+        margin-top: 48px;
+        margin-right: auto;
+        margin-bottom: 51px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 150%;
+        color: white;
+      }
 
-			.hero__btn {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 193px;
-				height: 42px;
-				font-weight: 500;
-				font-size: 16px;
-				line-height: 150%;
-				color: var(--main-accent-color);
-				background-color: white;
-				cursor: pointer;
-				transition: 0.3s
-			}
+      .hero__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 193px;
+        height: 42px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--main-accent-color);
+        background-color: white;
+        cursor: pointer;
+        transition: 0.3s
+      }
 
-			.hero__btn:hover {
-				color: white;
-				background-color: var(--secondary-accent-color);
-			}
+      .hero__btn:hover {
+        color: white;
+        background-color: var(--secondary-accent-color);
+      }
 
-		.hero__img {
-			margin-top: 138px; /* should be 69px, but for some reason it renders just half of the specified margin pixels */
-			margin-left: auto;
-			align-self: center;
-			width: 505px;
-			height: 512px;
-			border-radius: 32px 32px 0px 0px;
-		}
+    .hero__img {
+      margin-top: 138px; /* should be 69px, but for some reason it renders just half of the specified margin pixels */
+      margin-left: auto;
+      align-self: center;
+      width: 505px;
+      height: 512px;
+      border-radius: 32px 32px 0px 0px;
+    }
 
 /* Media Queries */
 
 @media (max-width: 1257px) {
-	.hero {
-		height: 693px;
-	}
+  .hero {
+    height: 693px;
+  }
 
-		.hero__container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			padding: 69px 24px 69px 24px;
-		}
+    .hero__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 69px 24px 69px 24px;
+    }
 
-			.hero__text {
-				width: 100%;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-			}
+      .hero__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 
-			.hero__p {
-				width: 100%;
-				margin-top: 40px;
-				margin-bottom: 48px;
-			}
+      .hero__p {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 48px;
+      }
 
-			.hero__img {
-				margin-left: 0;
-				margin-top: 109px;
-			}
+      .hero__img {
+        margin-left: 0;
+        margin-top: 109px;
+      }
 }
 
 @media (max-width: 768px) {
-	.hero__container {
-		padding: 69px 24px 69px 24px;
-	}
+  .hero__container {
+    padding: 69px 24px 69px 24px;
+  }
 
-		.hero__header {
-			width: 100%;
-			font-size: 48px;
-			line-height: 125%;
-		}
+    .hero__header {
+      width: 100%;
+      font-size: 48px;
+      line-height: 125%;
+    }
 
-		.hero__p {
-			font-size: 18px;
-			line-height: 36px;
-		}
+    .hero__p {
+      font-size: 18px;
+      line-height: 36px;
+    }
 
-		.hero__img {
-			height: 327px;
-			width: 330px;
-		}
+    .hero__img {
+      height: 327px;
+      width: 330px;
+    }
 }

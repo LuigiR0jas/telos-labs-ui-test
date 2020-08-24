@@ -1,0 +1,107 @@
+
+.card__group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 336px;
+  }
+
+  .card--center {
+    margin-left: 10.55%;
+    margin-right: 10.55%;
+  }
+    .card-circle {
+      height: 64px;
+      width: 64px;
+      border-radius: 100%;
+      background-color: var(--secondary-accent-color);
+    }
+
+    .card-title {
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 150%;
+    }
+
+    .card-arrow {
+      margin-top: 7.82px;
+      cursor: pointer;
+      transition: transform 0.2s cubic-bezier(0.5, 0.25, 0, 1);
+    }
+
+    .card-arrow--up {
+      transform: rotate(180deg);
+      transition: transform 0.2s cubic-bezier(0.5, 0.25, 0, 1);
+    }
+
+    .card-p {
+      visibility: hidden;
+      opacity: 0;
+      width: 336px;
+      margin: 38.82px 0 0 0;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      transform: translateY(-50px);
+      transition: visibility 0.2s, opacity 0.2s linear, transform 0.2s cubic-bezier(0.5, 0.25, 0, 1);
+    }
+
+    .card-p--visible {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+      transition: visibility 0.2s, opacity 0.2s linear, transform 0.2s cubic-bezier(0.5, 0.25, 0, 1);
+    }
+
+
+@media (max-width: 1257px) {
+  .card--center {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+
+@media (max-width: 1148px) {
+  .card__group {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+    .card--center {
+      margin-left: 10.55%;
+      margin-right: 10.55%;
+    }
+
+      .card-p {
+        visibility: hidden;
+        opacity: 0;
+        height: 0px;
+        margin: 0 0 0 0;
+        margin-bottom: 83.82px;
+        text-align: center;
+        transform: translateY(-5px);
+      }
+
+      .card-p--visible {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        margin-top: 38.82px;
+        margin-bottom: 80px;
+        transform: translateY(0px);
+      }
+}
